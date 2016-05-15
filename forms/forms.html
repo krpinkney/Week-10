@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+
+    <form>
+        first name:
+        <input type="text" id="fname"/>
+        
+        <h2>Sports</h2>
+        <input type="checkbox" /> Surfing
+        <br />
+        <input type="checkbox" /> Yoga
+        
+        <h2>Gender</h2>
+        <input type="radio" name="gender" /> Male
+        <br/>
+        <input type="radio" name="gender" /> Female
+        <br/>
+        <input type="radio" name="gender" /> Other
+           
+        <br /><br />
+        
+        <div id="button" style="background-color:red; width:100px; text-align:center; cursor:pointer;">
+            submit
+        </div>
+    </form>
+
+    <script>
+        document.getElementById("button").addEventListener('click', function() {
+            var fname = document.getElementById("fname").value;
+            alert(fname);
+        });
+    </script>
+
+</body>
+</html>
